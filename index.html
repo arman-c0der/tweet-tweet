@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Tweet Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen font-sans">
+    <div class="container mx-auto p-4 max-w-2xl">
+      <!-- Header -->
+      <h1 class="text-3xl font-bold mb-6 text-center text-blue-600">
+        Modern Tweet App
+      </h1>
+
+      <!-- Tweet Input Box -->
+      <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+        <textarea
+          id="tweetInput"
+          class="w-full p-3 border-2 border-black rounded-2xl mb-2 resize-vertical min-h-[100px] text-sm"
+          placeholder="What's happening?"
+          maxlength="255"
+        ></textarea>
+        <div class="flex justify-between items-center">
+          <span id="charCount" class="text-sm text-gray-500">0 / 255</span>
+          <button
+            id="postTweet"
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300 btn-disabled"
+            disabled
+          >
+            Tweet
+          </button>
+        </div>
+      </div>
+
+      <!-- Tweet List -->
+      <div id="tweetList" class="space-y-4">
+        <!-- Example Tweet Box -->
+        <!--
+        <div class="tweet-container">
+          <p class="tweet-content">Sample Tweet Content</p>
+          <div class="tweet-info">
+            <span>7/23/2025, 8:55:19 AM</span>
+            <div>
+              <button class="edit-tweet edit-btn">Edit</button>
+              <button class="delete-tweet delete-btn">Delete</button>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
